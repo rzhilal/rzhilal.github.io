@@ -4,11 +4,12 @@ import theme from '../../../hooks/themes';
 import MyHeading from '../myHeading';
 import DataBox from './experienceProject';
 import { experienceList } from './data';
+// import Box from '@mui/system/Box';
 
 
 
 function Experience() {
-    console.log(experienceList)
+    // console.log(experienceList)
     return (
         <Container id="Experience" disableGutters sx={{ marginY: "20rem"}} >
             <ThemeProvider theme={theme}>
@@ -17,9 +18,7 @@ function Experience() {
                     <Grid container sx={{ display: "flex", flexDirection: "column", flexGrow: 1 , marginY: 1, paddingY:"25px" }}>
                         <Typography variant='h4' component={"h3"} marginBottom={5}> {item.name} </Typography>
                         {item.projects.map((project) => 
-                        // <>
-                        <DataBox {...project} />
-                        // </>
+                            <DataBox {...project} />
                         )}
                     </Grid>
                 ))}

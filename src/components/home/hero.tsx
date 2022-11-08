@@ -45,5 +45,3 @@ function Hero() {
   }
   
   export default Hero;
-
-//   <Link href="https://junkielabs.in/" variant="body1">{' Junkielabs '}</Link>

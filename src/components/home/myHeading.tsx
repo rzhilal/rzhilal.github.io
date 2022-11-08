@@ -10,13 +10,13 @@ type MyHeadingProps = {
 const MyHeading = ({ index, myHeading } : MyHeadingProps) => {
     return (
         <Box sx={{
-        flexDirection: "row",
-        display: 'flex',
-        alignItems: "center",
-        margin: "1rem 0rem 4rem",
-        width: "100%",
+            display: 'flex',
+            flexDirection: "row",
+            alignItems: "center",
+            margin: "1rem 0rem 4rem",
+            width: "100%",
         }}>
-            <Box display='flex' flexDirection="row" justifyContent="center" alignItems="flex-start"  textAlign={"end"}>
+            <Box display='flex' flexDirection="row" justifyContent="center" alignItems="flex-end">
                 <Typography variant="h4" component="h3">{index}</Typography>
                 <Typography variant="h3" component="h2" marginX={2} >{myHeading}</Typography>
             </Box>

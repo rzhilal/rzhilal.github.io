@@ -29,7 +29,7 @@ function About() {
     <Container id="About" sx={{ marginY: "6rem"}}>
         <MyHeading index="01." myHeading="About Me" />
         <Grid item container  sx={{display: "flex", direction:{xs:"column", md:"row"}}} >
-          <Grid item container xs={12} md={7} flexGrow={1} marginY={2}>
+          <Grid item container xs={12} md={7} flexGrow={1} marginY={2} padding={"5px"}>
             <Typography variant="body1" component="p" marginBottom={2} >
               Hello! My name is Rahul and I enjoy exploring new technologies. My
               interest in web development started in 2021 when I decided to try creating web backend-APIs.
@@ -64,13 +64,13 @@ function About() {
           </Grid>
           <Grid item container xs={12} md={5}  flexGrow={1} 
             sx={{
-              p: {xs: 6, md: 3} , 
-              border: '1px dashed grey',
+              paddingY: {xs: 6, sm: 8, md: 3} ,
+              paddingX: {xs: 0, sm: 6, md: 3} ,
+              // border: '1px dashed grey',
               justifyContent: "center",
             }} 
           >
             <Box sx={{objectFit: "contain", justifyContent: "center", maxWidth: { xs: "60%", md: "300px" }}}>
-              {/* <StyledImg src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif" /> */}
               <StyledImg src={myImage} />
             </Box>
           </Grid>
