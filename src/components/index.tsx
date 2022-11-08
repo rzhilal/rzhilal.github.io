@@ -1,0 +1,14 @@
+// export { default as Head } from './head';
+export { default as Layout } from './layout/layout';
+// export { default as Loader } from './loader';
+export { default as Nav } from './headers/navBar';
+// export { default as Menu } from './menu';
+// export { default as Side } from './side';
+// export { default as Social } from './social';
+// export { default as Email } from './email';
+// export { default as Footer } from './footer';
+export { default as Hero } from './home/hero';
+export { default as About } from './home/About/about';
+export { default as Experience } from './home/Experience/experience';
+export { default as OpenSource } from './home/OpenSource/openSource';
+export { default as Contact } from './home/Contact/contact';
