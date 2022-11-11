@@ -1,5 +1,4 @@
-![A preview](src\images\rportfolio.png)
-<!-- https://github.com/nirajprakash/nirajprakash.github.io/blob/main/images/rportfolio.png -->
+![A preview](https://github.com/rahulprakash11/rahulprakash11.github.io/blob/main/src/images/rportfolio.png)
 
 # Personal Portfolio
 <!-- [](src\images\rportfolio.png) -->
