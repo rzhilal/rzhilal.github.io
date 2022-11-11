@@ -11,29 +11,10 @@ import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import { socialList } from "./data";
 
-// type MySocialProps = {
-//     // index: string;
-//     id: number;
-//     icon: React.ReactComponent;
-//     link: string;
-    
-//     // location: any;: MySocialProps[]
-// }
 
-    
-// const MyIcon = (social: MySocialProps) => {
-//     return (
-//         <Link href="#" onClick={() => window.open(`${social.link}`, '_blank', 'noopener,noreferrer')}>
-//             <Box sx={{ display: "flex", justifyContent: "center",height: "60px", alignItems: "center", color: "#b98a6f", "&:hover": {alignItems: "flex-start", color: "#51bda3", cursor: "pointer",}}}>
-//                 <IconButton color="inherit">
-//                     {social.icon}
-//                     <GitHubIcon fontSize="large"/>
-//                 </IconButton>
-//             </Box>
-//         </Link>
-//     )
-// }
-  
+
+
+
 const MySocial = () => {
     return (
         <ThemeProvider theme={theme}>
@@ -46,38 +27,37 @@ const MySocial = () => {
                     <Divider color="#a8b2d1" orientation="vertical" sx={{ mx: 1 }}/>
                 </Box>
                 <Link href="#" onClick={() => window.open(`${socialList.git}`, '_blank', 'noopener,noreferrer')}>
-                    <Box sx={{ display: "flex", justifyContent: "center",height: "60px", alignItems: "center", color: "#b98a6f", "&:hover": {alignItems: "flex-start", color: "#51bda3", cursor: "pointer",}}}>
-                        <IconButton color="inherit">
+                    <Box sx={{ display: "flex", justifyContent: "center", paddingY:"8px", paddingX : { xs: "8px", md : "8px" }, color: "#b98a6f", "&:hover": {paddingTop: "0px", paddingBottom: "16px", color: "#51bda3", cursor: "pointer",}}}>
+                        <IconButton color="inherit" sx={{ padding: "0px" }}>
                             {/* {socialList.icon} */}
                             <GitHubIcon fontSize="large"/>
                         </IconButton>
                     </Box>
                 </Link>
                 <Link href="#" onClick={() => window.open(`${socialList.linkedIn}`, '_blank', 'noopener,noreferrer')}>
-                    <Box sx={{ display: "flex", justifyContent: "center",height: "60px", alignItems: "center", color: "#b98a6f", "&:hover": {alignItems: "flex-start", color: "#51bda3", cursor: "pointer",}}}>
-                        <IconButton color="inherit">
+                    <Box sx={{ display: "flex", justifyContent: "center", paddingY:"8px", paddingX : { xs: "8px", md : "8px" }, color: "#b98a6f", "&:hover": {paddingTop: "0px", paddingBottom: "16px", color: "#51bda3", cursor: "pointer",}}}>
+                        <IconButton color="inherit" sx={{ padding: "0px" }}>
                             {/* {socialList.icon} */}
                             <LinkedInIcon fontSize="large"/>
                         </IconButton>
                     </Box>
                 </Link>
                 <Link href="#" onClick={() => window.open(`${socialList.twitter}`, '_blank', 'noopener,noreferrer')}>
-                    <Box sx={{ display: "flex", justifyContent: "center",height: "60px", alignItems: "center", color: "#b98a6f", "&:hover": {alignItems: "flex-start", color: "#51bda3", cursor: "pointer",}}}>
-                        <IconButton color="inherit">
+                    <Box sx={{ display: "flex", justifyContent: "center", paddingY:"8px", paddingX : { xs: "8px", md : "8px" }, color: "#b98a6f", "&:hover": {paddingTop: "0px", paddingBottom: "16px", color: "#51bda3", cursor: "pointer",}}}>
+                        <IconButton color="inherit" sx={{ padding: "0px" }}>
                             {/* {socialList.icon} */}
                             <TwitterIcon fontSize="large"/>
                         </IconButton>
                     </Box>
                 </Link>
                 <Link href="#" onClick={() => window.open(`${socialList.instagram}`, '_blank', 'noopener,noreferrer')}>
-                    <Box sx={{ display: "flex", justifyContent: "center",height: "60px", alignItems: "center", color: "#b98a6f", "&:hover": {alignItems: "flex-start", color: "#51bda3", cursor: "pointer",}}}>
-                        <IconButton color="inherit">
+                    <Box sx={{ display: "flex", justifyContent: "center", paddingY:"8px", paddingX : { xs: "8px", md : "8px" }, color: "#b98a6f", "&:hover": {paddingTop: "0px", paddingBottom: "16px", color: "#51bda3", cursor: "pointer",}}}>
+                        <IconButton color="inherit" sx={{ padding: "0px" }}>
                             {/* {socialList.icon} */}
                             <InstagramIcon fontSize="large"/>
                         </IconButton>
                     </Box>
                 </Link>
-                {/* <MyIcon /> */}
             </Box>
         </ThemeProvider>
     )

@@ -18,28 +18,28 @@ export type Experiences = {
 export const experienceList:[Experiences] = [
     {
         key : 1,
-        name: "Junkielabs",
+        name: "@Junkielabs",
         projects: [
             {
                 key: 11,
-                name: "Junkielabs Backend Development",
-                detail: "Caters for an Open source based Collaborative platform for developers to work together on a project.",
-                tech: ["Django", "DynamoDb", "AWS", "Zappa"],
+                name: "Junkielabs Backend",
+                detail: "Developed using Django-Rest-Framework. Caters for an Open and Collaborative platform for developers, designers and innovators to come together on a project and collaborate. The platform will handle in mundane day-to-day tasks for efficient collaboration. ",
+                tech: ["Django", "DynamoDb", "AWS-Lambda", "Zappa"],
                 link: "https://junkielabs.in/",
                 image: junkieBack
             },
             {
                 key: 12,
-                name: "Junkielabs Admin-Dashboard Development",
-                detail: "Implemented in React, an Admin Dashboard integration with Backend Api for Data access and User control.",
+                name: "Junkielabs Admin-Dashboard",
+                detail: "Implemented in React, using React-Admin library. An Admin Dashboard integration with Backend Api for Database access and Super-User control.",
                 tech: ["React", "TypeScript"],
                 link: "https://junkielabs.in/",
                 image: junkieBack
             },
             {
                 key: 13,
-                name: "Hundi-Record Book Backend Development",
-                detail: "A Rest-Api in python using FastApi framework. With features like Scheduled event triggers, notification system, analytics, OAuth based user verification.",
+                name: "Hundi Record-Book Backend",
+                detail: "A Rest-Api in python using FastApi framework, with MongoDb as its nosql database. With features like Scheduled event triggers, notification system, analytics, OAuth based user-verification.",
                 tech: ["FastApi", "MongoDB", "Firebase Authentication", "GCP"],
                 image: hundiBack
             }

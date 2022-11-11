@@ -10,6 +10,7 @@ import theme from '../../hooks/themes';
 import Divider from '@mui/material/Divider';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import { Container } from '@mui/material';
 
 type LayoutProps = {
     children: JSX.Element[] | JSX.Element;
@@ -37,7 +38,9 @@ const Layout = ({ children } : LayoutProps) => {
             </Grid>
           </Grid>
           <Grid item container xs={12} md >
+            <Container>
             {children}
+            </Container>
           </Grid>
           <Grid item container sx={{ width: {xs: "100%", md: "85px", lg:"125px"}, display: { xs: "none", md: "inherit"}}} justifyContent={"center"}>
             <Grid item sx={{ position: {xs: "relative", md: "fixed", bottom: 0} }}>

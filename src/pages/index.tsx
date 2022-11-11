@@ -7,7 +7,7 @@ import { About, OpenSource, Experience, Hero, Contact, Layout} from '../componen
 function Content() {
     return (
         <Container sx={{display: "flex", justifyContent: "center"}}>
-          <Box sx={{maxWidth: "900px"}} >
+          <Box sx={{maxWidth: "1000px"}} >
             <Hero />
             <About  />
             <Experience  /> 

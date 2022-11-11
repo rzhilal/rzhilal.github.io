@@ -14,9 +14,11 @@ import Grid from '@mui/material/Grid';
 import Slide from '@mui/material/Slide';
 import CloseIcon from '@mui/icons-material/Close';
 import { resumeLink } from '../../constants/data';
+import MyIcon1 from '../../images/myIcon1';
+
+
 
 const pages = ['About', 'Experience', 'Open', "contact"];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
 interface Props {
@@ -25,11 +27,7 @@ interface Props {
 
 function HideOnScroll(props: Props) {
   const { children } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger(
-    // { target: window ? window() : undefined, }
   );
 
   return (
@@ -60,23 +58,11 @@ function ResponsiveAppBar() {
           <Toolbar disableGutters>
             <Grid container sx={{ display: 'flex', flexDirection: "row", flexWrap: "nowrap", justifyContent: "space-between", padding: 1 }}>
               <Grid item container width={"fit-content"} padding={1} >
-                <Button variant="outlined" href="/" sx={{ 
+                <Button variant="outlined" href="/" sx={{ width: "90px", height: "80px", 
                   display: 'flex', justifyContent: "center", mr: 1, color:"#51bda3", borderWidth: 3, borderColor: "#51bda3", '&:hover': { borderWidth: 3, borderColor: "#51bda3", backgroundColor:"ButtonHighlight" }
                 }}>
-                  <Typography
-                  variant="h6"
-                  fontSize={"2rem"}
-                  // sx={{
-                  //   m: 1,
-                  //   display: 'flex',
-                  //   fontFamily: 'monospace',
-                  //   fontWeight: 700,
-                  //   letterSpacing: '.5rem',
-                  //   color: 'inherit',
-                  //   }}
-                  >
-                    RP
-                  </Typography>
+                  <MyIcon1 />
+                  
                 </Button>
               </Grid>
 
@@ -98,7 +84,7 @@ function ResponsiveAppBar() {
                   display: { xs: 'none', md: 'flex' }, color:"#51bda3" }}
                 >
                   <Button variant="outlined" href={resumeLink} sx={{ 
-                    display: { xs: 'none', md: 'flex' }, m: 1, color:"#51bda3", borderWidth: 2, borderColor: "#51bda3", '&:hover': { borderWidth: 2, borderColor: "#51bda3", backgroundColor:"ButtonHighlight" }
+                    display: { xs: 'none', md: 'flex' }, m: 1, color:"#51bda3", borderWidth: 3, borderColor: "#51bda3", '&:hover': { borderWidth: 3, borderColor: "#51bda3", backgroundColor:"ButtonHighlight" }
                   }}>
                     Resume
                   </Button>

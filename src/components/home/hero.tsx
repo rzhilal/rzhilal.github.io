@@ -10,10 +10,11 @@ function Hero() {
         <ThemeProvider theme={theme}>
             <Container disableGutters sx={{ marginY: "20rem"}}>            
                 <Grid container display={"flex"} flexDirection={"column"}>
-                    <Typography variant="h4" component="h1" marginBottom={1} >
-                    Hi, my name is
-                    </Typography>
-                    
+                    {/* <Grid item xs={6}> */}
+                        <Typography variant="h4" component="h1" marginBottom={1} >
+                        Hi, my name is
+                        </Typography>
+                    {/* </Grid> */}
                     <Typography variant="h1" component="h2" marginBottom={0.5} >
                     Rahul Prakash.
                     </Typography>

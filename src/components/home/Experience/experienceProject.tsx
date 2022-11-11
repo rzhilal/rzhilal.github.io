@@ -1,4 +1,4 @@
-import {  Grid,  ThemeProvider, Typography } from "@mui/material"; 
+import { Grid,  ThemeProvider, Typography } from "@mui/material"; 
 import styled from "styled-components";
 import { Experience } from "./data";
 import theme from "../../../hooks/themes";
@@ -7,7 +7,6 @@ import theme from "../../../hooks/themes";
 
 const StyledImg1 = styled.img`
     width: 100%;
-    opacity: 1;
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(0.5);
     &:hover,
@@ -17,40 +16,40 @@ const StyledImg1 = styled.img`
       };
 `;
 
+    // opacity: 1;
 
 
 function ProjectContent({...project}:Experience) {
     return (
         <ThemeProvider theme={theme}>
-        <Grid container item sx={{
-            justifyContent: {xs: "flex-start", md: "right"},
+        <Grid container sx={{
+            display:"flex",
+            flexDirection: "column",
+            justifyContent: {xs: "flex-start", md: "flex-end"},
             textAlign: {xs: "left", md: "right"},
-            padding: {xs: "15px", md: "none"},
+            padding: {xs: "40px", md: "none"},
             
             }}
         >
-            <Grid item textAlign={"inherit"} >
-                <Typography component="p" sx={{fontFamily: "monospace", fontSize: "1.2rem", color: "#51bda3", marginY: "10px"}}> Featured Project </Typography>
+            <Typography component="p" sx={{fontFamily: "monospace", fontSize: "1.1rem", color: "#51bda3", marginY: "10px"}}> Featured Project </Typography>
+            
+            <Grid item container sx={{flexDirection: {xs: "row", md: "row-reverse"}}}>
+                <Typography variant="h5" component="h4" sx={{ marginBottom: "20px", maxWidth: { xs: "100%", md: "60%" }}}> 
+                    {project.name} 
+                </Typography>
             </Grid>
-            <Grid item container textAlign={"inherit"} sx={{
-                backgroundColor: {xs: "none", md: "#ffffffdb"},
-                padding: {xs: "none", md: "15px"},
+            <Grid item sx={{
+                backgroundColor: {xs: "none", md: "#e1d3cd"},
+                padding: {xs: "none", md: "20px"},
                 boxShadow: {xs: "none", md: "0 10px 30px -15px rgb(2 12 28 / 16%)"},
                 borderRadius: "5px",
-            }}>
-            
-                <Grid item textAlign={"inherit"}>
-                    <Typography variant="h3" component="h3" sx={{ fontWeight:"600", marginBottom: "20px", color: "#4c1818"}}> 
-                        {project.name} 
-                    </Typography>
-                </Grid>
-                <Grid item textAlign={"inherit"}>
-                    <Typography component="p" sx={{ fontSize: "1rem" }}>
-                        {project.detail}
-                    </Typography>
-                </Grid>
-                
+            }}
+            >
+                <Typography variant="body2" component="p" sx={{ fontSize: "1rem" }}>
+                    {project.detail}
+                </Typography>
             </Grid>
+                
             <Grid item container textAlign={"inherit"}
                 sx={{
                     display: "flex",
@@ -95,12 +94,14 @@ export default function DataBox({...project}:Experience) {
                     height: "inherit",
                     backgroundImage: {xs: `url(${project.image})`, md: "none"},
                     backgroundBlendMode: {xs:"screen", md:"none"},
-                    backgroundColor: {xs:"#f7f2f0e3", md:"#f7f2f000"},
-                    backgroundSize: "cover",
+                    backgroundColor: {xs:"#f7f2f0", md:"#f7f2f000"},
+                    // backgroundSize: "cover",
                     backgroundPosition: "center",
-                    borderRadius: "8px",
+                    borderRadius: {xs: "none", md:"8px"},
                     paddingY: "55px",
-                    zIndex: 2
+                    zIndex: 2,
+                    boxShadow: {xs: "0 10px 30px -15px rgb(2 12 28 / 16%)", md: "none"},
+
                 }}
             >
                 <ProjectContent {...project} />
@@ -109,17 +110,19 @@ export default function DataBox({...project}:Experience) {
                 sx={{ 
                     display: { xs: "none", md: "flex"},
                     objectFit: "cover", 
+                    bgcolor: "#f7f2f0",
                     justifyContent: "center", 
                     flexShrink: 1, 
                     borderRadius: "8px",
                     position: "absolute",
                     left: 1,
+                    // bottom: 1,
                     alignItems: "center",
                     zIndex: 1
                 }}
             >
                 <StyledImg1 src={project.image} 
-                    style={{borderRadius: "8px", opacity: 1 }}
+                    style={{borderRadius: "8px" }}
                 />
             </Grid>
         </Grid>

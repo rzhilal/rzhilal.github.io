@@ -33,9 +33,9 @@ let theme = createTheme({
                     },
                     style: {
                         color: "#9f7171",
-                        fontWeight: "500",
-                        // fontSize: "0.8rem"
-                        fontFamily: "calibre",
+                        // fontWeight: "500",
+                        fontSize: "clamp(26px,5vw,32px)",
+                        fontFamily: "roboto",
                     }
                 },
                 {
@@ -56,7 +56,7 @@ let theme = createTheme({
                     style: {
                         color: "#9f7171",
                         fontWeight: "500",
-                        fontSize: "clamp(15px, 5vw, 25px)",
+                        fontSize: "clamp(25px, 3vw, 35px)",
                         '&:hover': {
                             color: "#51bda3",
                         }
@@ -64,11 +64,22 @@ let theme = createTheme({
                 },
                 {
                     props: {
+                        variant: "h6",
+                    },
+                    style: {
+                        color: "#51bda3",
+                        fontFamily: "monospace",
+                        // fontSize: "2rem"
+                        // fontSize: "clamp(35px, 5vw, 55px)",
+                    }
+                },
+                {
+                    props: {
                         variant: "body1",
                     },
                     style: {
-                        color: "#340303",
-                        fontSize: "1.1rem",
+                        color: "#b98a6f",
+                        fontSize: "1.02rem",
                         letterSpacing: "0.015em",
                     }
                 },

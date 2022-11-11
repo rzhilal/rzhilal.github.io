@@ -23,7 +23,6 @@ const StyledImg = styled.img`
 `;
 
 function About() {
-  console.log(myImage)
   return (
     <ThemeProvider theme={theme}>
     <Container id="About" sx={{ marginY: "6rem"}}>
@@ -57,7 +56,7 @@ function About() {
             }}>
               {skillList.map((item) => (
                 <Grid item xs = {5} >
-                <Typography component="li" sx={{fontFamily: "monospace", fontSize: "1rem", color: "#b98a6f", margin: "0px 20px 5px 0px",}}> {item.skill} </Typography>
+                <Typography component="li" sx={{fontFamily: "monospace", fontSize: "1.04rem", color: "#444444", margin: "0px 20px 5px 0px",}}> {item.skill} </Typography>
                 </Grid>
               ))}
             </Grid>

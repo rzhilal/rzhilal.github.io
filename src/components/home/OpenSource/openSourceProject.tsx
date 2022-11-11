@@ -23,40 +23,43 @@ export default function ProjectBox({...project}:ProjectBoxProps) {
     return (
         // <ThemeProvider theme={theme}>, width: "50px", height: "50px",
         
-        <Grid item container 
+        <Grid container 
          sx={{
             padding: 3,
             border: "solid 1px #00000021",
             bgcolor: "#ffffff42",
             borderRadius: "9px",
+            height: "100%",
             "&:hover": {
                 cursor: "pointer",
-            }
+            },
         }}
         onClick={() => openInNewTab(project.link)}
         >
             <Grid container sx={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "flex-start",
+                justifyContent: "space-between",
             }}>
-                <Grid item container justifyContent={"space-between"} marginBottom={"20px"}>
-                <ThemeProvider theme={iconTheme}>
-                    <FolderOutlinedIcon fontSize="large" sx={{ color: "#51bda3" }}/>
-                    {/* <Typography component="p" sx={{fontFamily: "monospace", fontSize: "1rem", color: "#64ffda", marginY: "10px"}}> Featured Project </Typography>#51bda3 */}
-                    <Button sx={{color: "#51bda3"}} onClick={() => openInNewTab(project.link)}>
-                        <GitHubIcon sx={{ color: "#7c5843", "&:hover": { color: "#51bda3" } }}/>
-                    </Button>
-                </ThemeProvider>
-                </Grid>
-                <Grid item alignItems={"flex-end"} marginBottom={4}>
-                    <Typography variant="h5" component="h3"> {project.name} </Typography>
-                </Grid>
-                <Grid item textAlign={"inherit"}>
-                    <Typography variant="body2" component="p" >
-                        {project.detail}
-                        {/* detail shjdf asdfhyugfehf fasifdejfbk sfadufadsfkasf  */}
-                    </Typography>
+                <Grid item container>
+                    <Grid item container justifyContent={"space-between"} marginBottom={"20px"}>
+                        <ThemeProvider theme={iconTheme}>
+                            <FolderOutlinedIcon sx={{ color: "#51bda3", fontSize: "3rem" }}/>
+                            <Button sx={{color: "#51bda3", padding: "8px", alignItems: "flex-end"}} onClick={() => openInNewTab(project.link)}>
+                                <GitHubIcon sx={{ color: "#7c5843", "&:hover": { color: "#51bda3" } }}/>
+                            </Button>
+                        </ThemeProvider>
+                    </Grid>
+                
+                    <Grid item alignItems={"flex-end"} marginBottom={4}>
+                        <Typography variant="h5" component="h3"> {project.name} </Typography>
+                    </Grid>
+                    <Grid item textAlign={"inherit"}>
+                        <Typography variant="body2" component="p" >
+                            {project.detail}
+                            {/* detail shjdf asdfhyugfehf fasifdejfbk sfadufadsfkasf  */}
+                        </Typography>
+                    </Grid>
                 </Grid>
                 <Grid item container textAlign={"inherit"}
                     sx={{
@@ -67,7 +70,7 @@ export default function ProjectBox({...project}:ProjectBoxProps) {
                     }}
                 >
                     {project.tech.map((item, index) => (
-                        <Typography component="li" key={index} sx={{fontFamily: "monospace", fontSize: "1rem", color: "#b98a6f", margin: "0px 20px 5px 0px"}}> {item} </Typography>
+                        <Typography key={index} sx={{fontFamily: "monospace", fontSize: "1rem", color: "#b98a6f", margin: "0px 20px 5px 0px"}}> {item} </Typography>
                     ))}
                 </Grid>
             </Grid>

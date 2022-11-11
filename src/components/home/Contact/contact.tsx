@@ -16,7 +16,7 @@ const Contact = () => {
         {/* <Container sx={{ marginY: "20rem"}}> */}
           <Grid container id="contact" sx={{ justifyContent: "space-around", marginBottom: "20rem"}} >            
             <Grid item container display={"flex"} flexDirection={"column"} maxWidth="600px" textAlign={"center"} marginBottom={1}>
-                <Typography sx={{ fontSize: {xs: "13px", sm: "14px", md: "16px", lg: "18px"}, color: "#51bda3", letterSpacing: 1.5, marginBottom: "20px", fontWeight: 500 }}>
+                <Typography variant={"h6"} component={"h5"}>
                 04. What's Next
                 </Typography>
                 
@@ -31,7 +31,7 @@ const Contact = () => {
                   <Button variant="outlined" href={`mailto:${email}`}
                     // onClick={(e) => {
                     //   window.location.href = "mailto:rahulpra@gmail.com";
-                    //   e.preventDefault();
+                    //   e.preventDefault();  sx={{ fontSize: {xs: "13px", sm: "14px", md: "16px", lg: "18px"}, color: "#51bda3", letterSpacing: 1.5, marginBottom: "20px", fontWeight: 500 }}
                     // }}
                     sx={{ 
                       width: "8rem", height: "4rem", color:"inherit", borderColor: "inherit", borderWidth: 2, '&:hover': { borderColor: "inherit", borderWidth: 2, backgroundColor:"ButtonHighlight" }
