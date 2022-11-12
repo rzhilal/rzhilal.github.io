@@ -11,6 +11,7 @@ import Divider from '@mui/material/Divider';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
+import { email } from "../../constants/data";
 
 type LayoutProps = {
     children: JSX.Element[] | JSX.Element;
@@ -21,9 +22,6 @@ type LayoutProps = {
 
 
 const Layout = ({ children } : LayoutProps) => {
-  console.log(theme.breakpoints)
-  // console.log(md)
-  const email = "rahulprakash11@gmail.com"
 
   return (
     <ThemeProvider theme={theme}>

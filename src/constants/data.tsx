@@ -6,3 +6,4 @@
 // https://drive.google.com/file/d/1t-D_9VueacqpYDorhO9RAcd0BZjbFZTB/view?usp=share_link
 
 export const resumeLink = "https://drive.google.com/uc?id=1t-D_9VueacqpYDorhO9RAcd0BZjbFZTB&export=download"
+export const email = "rahulprakash11@gmail.com"

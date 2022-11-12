@@ -4,10 +4,16 @@ import { linkSx } from "../../../constants/sxConstants";
 import theme from "../../../hooks/themes";
 import MyHeading from "../myHeading";
 import {skillList} from './data';
+import Avatar from '@mui/material/Avatar';
+import Chip from '@mui/material/Chip';
 import myImage from "../../../images/me.jpg"
 // interface Props {
 //   id: string;
 // } prop:Props
+// import { Icon } from "@material-ui/core";
+
+
+
 
 const StyledImg = styled.img`
     width: 100%;
@@ -47,16 +53,32 @@ function About() {
             <Typography variant="body1" component="p" marginBottom={2}>
               Here are a few <Typography sx={{...linkSx, fontSize: "1.2rem", fontWeight: "bold"}}> technologies </Typography>  I’ve been working with recently:
             </Typography>
-            <Grid container component={"ul"} sx={{
+            <Grid container spacing={2} sx={{
               display: "flex",
               flexDirection: "row",
-              justifyContent: "space-between",
+              // justifyContent: "space-between",
               flexWrap: "wrap",
-              marginLeft: "20px"
+              marginLeft: "10px"
             }}>
               {skillList.map((item) => (
-                <Grid item xs = {5} >
-                <Typography component="li" sx={{fontFamily: "monospace", fontSize: "1.04rem", color: "#444444", margin: "0px 20px 5px 0px",}}> {item.skill} </Typography>
+                <Grid item xs = {"auto"} sm={4} md={5} padding="5px">
+                  {/* <Box maxWidth={"fit-content"} sx={{ display: "flex", flexDirection: "row", bgcolor: "#d5b9a9", borderRadius: "5px", alignContent: "center", boxShadow: "3px 2px 7px 0px rgb(185 138 111)" }}> */}
+                    {/* <Box sx={{fontFamily: "monospace", fontSize: "1.04rem", color: "#444444" }}> */}
+                      <Chip
+                        avatar={<Avatar src={item.logo} />}
+                        label={item.skill}
+                        variant="filled"
+                        onClick={() => window.open(`${item.link}`, '_blank', 'noopener,noreferrer')}
+                        sx={{ fontFamily: "monospace", bgcolor: "#f7f2f0", boxShadow: "3px 2px 7px 0px rgb(185 138 111)" }}
+                      />
+                      {/* <Icon>
+                        <img src={item.logo} height={25} width={25}/>
+                      </Icon>
+                    </Box>
+                    <Box padding={"5px"}>
+                      <Typography sx={{fontFamily: "monospace", fontSize: "1.04rem", color: "#444444", margin: "0px 20px 5px 0px",}}> {item.skill} </Typography> */}
+                    {/* </Box> */}
+                  {/* </Box> */}
                 </Grid>
               ))}
             </Grid>
@@ -65,7 +87,7 @@ function About() {
             sx={{
               paddingY: {xs: 6, sm: 8, md: 3} ,
               paddingX: {xs: 0, sm: 6, md: 3} ,
-              // border: '1px dashed grey',
+              // border: '1px dashed grey',, border: '2px solid grey'
               justifyContent: "center",
             }} 
           >

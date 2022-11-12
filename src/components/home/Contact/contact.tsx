@@ -4,12 +4,11 @@ import Grid from '@mui/material/Grid';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import Typography from '@mui/material/Typography';
 import theme from '../../../hooks/themes';
+import { email } from "../../../constants/data";
 
 
 
 const Contact = () => {
-  const email = "rahulprakash11@gmail.com"
-
 
   return (
     <ThemeProvider theme={theme }>
