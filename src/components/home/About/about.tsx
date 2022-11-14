@@ -51,35 +51,17 @@ function About() {
               &amp; React.
             </Typography>
             <Typography variant="body1" component="p" marginBottom={2}>
-              Here are a few <Typography sx={{...linkSx, fontSize: "1.2rem", fontWeight: "bold"}}> technologies </Typography>  I’ve been working with recently:
+              Here are a few <Typography sx={{...linkSx, fontSize: "1.1rem", fontWeight: "bold"}}> technologies </Typography>  I’ve been working with recently:
             </Typography>
-            <Grid container spacing={2} sx={{
-              display: "flex",
-              flexDirection: "row",
-              // justifyContent: "space-between",
-              flexWrap: "wrap",
-              marginLeft: "10px"
-            }}>
+            <Grid item justifyContent={"space-between"}>
               {skillList.map((item) => (
-                <Grid item xs = {"auto"} sm={4} md={5} padding="5px">
-                  {/* <Box maxWidth={"fit-content"} sx={{ display: "flex", flexDirection: "row", bgcolor: "#d5b9a9", borderRadius: "5px", alignContent: "center", boxShadow: "3px 2px 7px 0px rgb(185 138 111)" }}> */}
-                    {/* <Box sx={{fontFamily: "monospace", fontSize: "1.04rem", color: "#444444" }}> */}
-                      <Chip
-                        avatar={<Avatar src={item.logo} />}
-                        label={item.skill}
-                        variant="filled"
-                        onClick={() => window.open(`${item.link}`, '_blank', 'noopener,noreferrer')}
-                        sx={{ fontFamily: "monospace", bgcolor: "#f7f2f0", boxShadow: "3px 2px 7px 0px rgb(185 138 111)" }}
-                      />
-                      {/* <Icon>
-                        <img src={item.logo} height={25} width={25}/>
-                      </Icon>
-                    </Box>
-                    <Box padding={"5px"}>
-                      <Typography sx={{fontFamily: "monospace", fontSize: "1.04rem", color: "#444444", margin: "0px 20px 5px 0px",}}> {item.skill} </Typography> */}
-                    {/* </Box> */}
-                  {/* </Box> */}
-                </Grid>
+                <Chip
+                  avatar={<Avatar src={item.logo} sx={{ padding: "8px" }}/>}
+                  label={item.skill}
+                  variant="filled"
+                  onClick={() => window.open(`${item.link}`, '_blank', 'noopener,noreferrer')}
+                  sx={{ margin: "15px", padding: "5px", height: "auto", borderRadius: "5px", fontFamily: "monospace", fontSize: "0.9rem" }}
+                />
               ))}
             </Grid>
           </Grid>
