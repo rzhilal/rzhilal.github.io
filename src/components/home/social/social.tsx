@@ -26,7 +26,6 @@ const MySocial = () => {
                     <Link href="#" onClick={() => window.open(`${item.link}`, '_blank', 'noopener,noreferrer')}>
                         <Box sx={{ display: "flex", justifyContent: "center", paddingY:"8px", paddingX : { xs: "8px", md : "8px" }, color: "#b98a6f", "&:hover": {paddingTop: "0px", paddingBottom: "16px", color: "#51bda3", cursor: "pointer",}}}>
                             <IconButton color="inherit" sx={{ padding: "0px" }}>
-                                {/* {socialList.icon} */}
                                 <item.icon fontSize="large"/>
                             </IconButton>
                         </Box>
