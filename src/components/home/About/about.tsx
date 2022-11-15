@@ -37,21 +37,19 @@ function About() {
           <Grid item container xs={12} md={7} flexGrow={1} marginY={2} padding={"5px"}>
             <Typography variant="body1" component="p" marginBottom={2} >
               Hello! My name is Rahul and I enjoy exploring new technologies. My
-              interest in web development started in 2021 when I decided to try creating web backend-APIs.
+              interest into web development started in 2021 when I decided to explore web APIs.
               Since then I have tried FastAPI, Django with multiple cloud services.
             </Typography>
             <Typography variant="body1" component="p" marginBottom={2} >
               Fast-forward to today, and I’ve had the privilege of working
-               at <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '}</Link>
-              , an Open Source Initiative. My main focus these days is building accessible, inclusive products and digital
-              experiences at <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '} </Link> for an in-house application.
+               with <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '}</Link>
+              , an Open Source Initiative. Here, my main responsibility these days includes building efficient, scalable and cost-effective backend solutions and micro-service APIs for an in-house application.
             </Typography>
             <Typography variant="body1" component="p" marginBottom={2} >
-              I also recently ventured into digital art & design.
-              &amp; React.
+              I have also recently ventured into digital art & design. 
             </Typography>
             <Typography variant="body1" component="p" marginBottom={2}>
-              Here are a few <Typography sx={{...linkSx, fontSize: "1.1rem", fontWeight: "bold"}}> technologies </Typography>  I’ve been working with recently:
+              Here are a few <Typography sx={{...linkSx, fontSize: "1.1rem", fontWeight: "bold"}}> technologies </Typography> that I’ve been working with recently:
             </Typography>
             <Grid item justifyContent={"space-between"}>
               {skillList.map((item) => (

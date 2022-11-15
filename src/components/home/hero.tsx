@@ -24,9 +24,9 @@ function Hero() {
                     
                     <Box maxWidth={"sm"}>
                     <Typography variant="body1" component="p" marginBottom={2} boxSizing={"inherit"}>
-                    I am a software-enginner, specializing in web-backend development. currently, working 
-                    with <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '}</Link> to 
-                    create an open source platform facillitating creators collaboration on wide range of project ideas. 
+                    I am a software-enginner, specializing in web-backend development. Currently, working 
+                    with <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '}</Link>, to 
+                    create open source solutions, facillitating developers, designers and creators for collaboration on wide range of project ideas. 
                     </Typography>
                     </Box>
                     <Box sx={{ 
