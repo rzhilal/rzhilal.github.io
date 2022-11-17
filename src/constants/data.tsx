@@ -1,5 +1,5 @@
 
 
 
-export const resumeLink = "https://drive.google.com/uc?id=1QsntP1X3Nu8Zht6jk7JeLsuiQ2QMO_51&export=download"
+export const resumeLink = "https://drive.google.com/uc?id=1yAcVLKQje1nj-bj_dOQ_sbr_T3me0u-M&export=download"
 export const email = "rahulprakash11@gmail.com"
