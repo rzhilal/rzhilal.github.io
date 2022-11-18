@@ -1,4 +1,6 @@
-![A preview](https://github.com/rahulprakash11/rahulprakash11.github.io/blob/main/src/images/rportfolio.png)
+<img src="https://github.com/rahulprakash11/rahulprakash11.github.io/blob/main/src/images/rportfolio.png" width=100%>
+
+<!-- ![A preview](https://github.com/rahulprakash11/rahulprakash11.github.io/blob/main/src/images/rportfolio.png) -->
 
 # Personal Portfolio
 <!-- [](src\images\rportfolio.png) -->
