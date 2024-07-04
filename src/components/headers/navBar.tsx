@@ -53,13 +53,13 @@ function ResponsiveAppBar() {
 
   return (
     <HideOnScroll>
-      <AppBar sx={{ bgcolor: "#f7f2f0" }}  >
+      <AppBar sx={{ bgcolor: "#F7F2F0" }}  >
         <Container disableGutters maxWidth="xl" >
           <Toolbar disableGutters>
             <Grid container sx={{ display: 'flex', flexDirection: "row", flexWrap: "nowrap", justifyContent: "space-between", padding: 1 }}>
               <Grid item container width={"fit-content"} padding={1} >
                 <Button variant="outlined" href="/" sx={{ width: "90px", height: "80px", 
-                  display: 'flex', justifyContent: "center", mr: 1, color:"#51bda3", borderWidth: 3, borderColor: "#51bda3", '&:hover': { borderWidth: 3, borderColor: "#51bda3", backgroundColor:"ButtonHighlight" }
+                  display: 'flex', justifyContent: "center", mr: 1, color:"#51bda3", borderWidth: 3, borderColor: "#F7F2F0", '&:hover': { borderWidth: 3, borderColor: "#F7F2F0", backgroundColor:"ButtonHighlight" }
                 }}>
                   <MyIcon1 />
                   
