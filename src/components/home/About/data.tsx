@@ -76,5 +76,11 @@ export const skillList = [
         skill: "GCP",
         logo: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
         link: "https://cloud.google.com/"
+    },
+    {
+        key: 14,
+        skill: "Hapi JS",
+        logo: "https://avatars.githubusercontent.com/u/3774533?v=4",
+        link: "https://hapi.dev/"
     }
 ];

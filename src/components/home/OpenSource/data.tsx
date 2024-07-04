@@ -4,24 +4,24 @@
 export const projectList = [
     {
         key: 1,
-        name: "Django-DynamoDb-Lambda-function, May 2022",
-        detail: " A Django REST API, show-casing PynamoDB as an ORM(Object-Relational mapper) and interface to AWS DynamoDB. For deployment, utilized AWS's Lambda function.",
-        tech: ["Django", "DynamoDb", "AWS-Lambda", "Zappa", "No-Sql"],
-        link: "https://github.com/RahulPrakash11/Django-DynamoDb-Lambda-function"
+        name: "Springboot-Postgresql-Recipe-book-web-backend",
+        detail: "A backend portfolio for a Book Recipe Website using Java Springboot. Features include CRUD operations, secure authentication, Minio Cloud Storage for file handling, and PostgreSQL for database management.",
+        tech: ["Java", "SpringBoot", "SQL", "PostgreSQL", "Minio"],
+        link: "https://github.com/rzhilal/Springboot-Postgresql-Recipe-book-web-backend"
     },
     {
         key: 2,
-        name: "Python-Firebase-Authentication-FastAPI, August 2022",
-        detail: "A user authentication system, based on Google's Firebase_admin auth module inside python's Fast-API based back-end. Deployed utilizing Docker and Google Cloud run.",
-        tech: ["FastApi", "Firebase", "GCP", "OAuth2", "Docker", "Google-Cloudrun"],
-        link: "https://github.com/RahulPrakash11/Python-Firebase-Authentication-FastAPI"
+        name: "NestJS-MySQL-Website-Portal-Lomba",
+        detail: "A backend project using NestJS with TypeScript and MySQL. It features secure authentication, CRUD operations for data management, and file organization capabilities.",
+        tech: ["NodeJS", "NestJS", "TypeScript", "MySQL"],
+        link: "https://github.com/rzhilal/NestJS-MySQL-Website-Portal-Lomba"
     },
     {
         key: 3,
-        name: "React Portfolio",
-        detail: "A simple react portfolio. Using React-MUI v5 library",
-        tech: ["React", "MUI-v5", "TypeScript"],
-        link: "#contained-button"
-    }
+        name: "HapiJS-Bookshelf-API",
+        detail: "A simple backend bookshelf API. Using HapiJS",
+        tech: ["NodeJS", "JavaScript", "HapiJS"],
+        link: "https://github.com/rzhilal/HapiJS-Bookshelf-API"
+    },
 ]
 
