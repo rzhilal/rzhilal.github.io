@@ -16,7 +16,7 @@ function Hero() {
                         </Typography>
                     {/* </Grid> */}
                     <Typography variant="h1" component="h2" marginBottom={0.5} >
-                    Rahul Prakash.
+                    Rizq Hilal Rifaasya.
                     </Typography>
                     <Typography variant="h2" component="h3" marginBottom={1} >
                     I'm a Backend developer.
@@ -24,10 +24,15 @@ function Hero() {
                     
                     <Box maxWidth={"sm"}>
                     <Typography variant="body1" component="p" marginBottom={2} boxSizing={"inherit"}>
-                    I am a software-enginner, specializing in web-backend development. Currently, working 
-                    with <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '}</Link>, to 
-                    create open source solutions, facillitating developers, designers and creators for collaboration on wide range of project ideas. 
+                    I am a software-enginner, specializing in web-backend development. Currently, just graduated from Bandung State Polytechnic. 
                     </Typography>
+
+                    <br />
+
+                    <Typography variant="body1" component="p" marginBottom={2} boxSizing={"inherit"}>
+                    Scroll Down for more information!
+                    </Typography>
+
                     </Box>
                     <Box sx={{ 
                         display: { xs: 'flex', md: 'none' }, color:"#51bda3" }}

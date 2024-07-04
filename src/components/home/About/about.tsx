@@ -36,17 +36,10 @@ function About() {
         <Grid item container  sx={{display: "flex", direction:{xs:"column", md:"row"}}} >
           <Grid item container xs={12} md={7} flexGrow={1} marginY={2} padding={"5px"}>
             <Typography variant="body1" component="p" marginBottom={2} >
-              Hello! My name is Rahul and I enjoy exploring new technologies. My
-              interest into web development started in 2021 when I decided to explore web APIs.
-              Since then I have tried FastAPI, Django with multiple cloud services.
-            </Typography>
-            <Typography variant="body1" component="p" marginBottom={2} >
-              Fast-forward to today, and I’ve had the privilege of working
-               with <Link href="#" onClick={() => window.open("https://junkielabs.in/", '_blank', 'noopener,noreferrer')} underline="none" sx={linkSx}>{' Junkielabs '}</Link>
-              , an Open Source Initiative. Here, my main responsibility these days includes building efficient, scalable and cost-effective backend solutions and micro-service APIs for an in-house application.
-            </Typography>
-            <Typography variant="body1" component="p" marginBottom={2} >
-              I have also recently ventured into digital art & design. 
+            As a proficient Software Engineer specializing in Back End development, I bring extensive experience in building robust and 
+            scalable applications using ExpressJS/TypeScript, NestJS, HapiJS, Loopback, and Java Spring Boot. My expertise extends to the 
+            implementation of various SQL and NoSQL databases, including MongoDB and Firebase. With a strong foundation in programming fundamentals, 
+            I quickly adapt to new technologies, ensuring high-quality and efficient software solutions.
             </Typography>
             <Typography variant="body1" component="p" marginBottom={2}>
               Here are a few <Typography sx={{...linkSx, fontSize: "1.1rem", fontWeight: "bold"}}> technologies </Typography> that I’ve been working with recently:
