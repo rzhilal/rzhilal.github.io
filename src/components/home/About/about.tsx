@@ -1,4 +1,4 @@
-import { Box, Grid, ThemeProvider, Typography, Link, Container } from "@mui/material";
+import { Box, Grid, ThemeProvider, Typography, Container } from "@mui/material";
 import styled from "styled-components";
 import { linkSx } from "../../../constants/sxConstants";
 import theme from "../../../hooks/themes";

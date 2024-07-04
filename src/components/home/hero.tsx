@@ -1,7 +1,6 @@
-import { Box, Button, Grid, Link, ThemeProvider, Typography } from '@mui/material';
+import { Box, Button, Grid, ThemeProvider, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import { resumeLink } from '../../constants/data';
-import { linkSx } from '../../constants/sxConstants';
 import theme from '../../hooks/themes';
 
 
