@@ -20,13 +20,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 </br>
 
-## Running Locally
-
-```bash
-$ git clone https://github.com/rahulprakash11/rahulprakash11.github.io.git
-$ cd to/project
-$ npm install
-$ npm start
-```
 Design inspired from:
 > https://brittanychiang.com/
