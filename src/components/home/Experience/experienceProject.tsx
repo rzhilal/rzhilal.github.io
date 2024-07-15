@@ -45,6 +45,12 @@ function ProjectContent({...project}:Experience) {
         mR = "9px";
     };
 
+    const handleProjectClick = () => {
+        if (project.link) {
+            window.open(project.link, "_blank", "noopener,noreferrer");
+        }
+    };
+
     return (
         <ThemeProvider theme={theme}>
         <Grid container sx={{
@@ -59,9 +65,14 @@ function ProjectContent({...project}:Experience) {
             <Typography component="p" sx={{fontFamily: "monospace", fontSize: "1.1rem", color: "#51bda3", marginY: "10px"}}> Featured Project </Typography>
             
             <Grid item container sx={{flexDirection: {xs: "row", md: flexDir}}}>
-                <Typography variant="h5" component="h4" sx={{ marginBottom: "20px", maxWidth: { xs: "100%", md: "60%" }}}> 
-                    {project.name} 
-                </Typography>
+                    <Typography
+                        variant="h5"
+                        component="h4"
+                        sx={{ marginBottom: "20px", maxWidth: { xs: "100%", md: "60%" }, cursor: project.link ? 'pointer' : 'default' }}
+                        onClick={handleProjectClick}
+                    >
+                        {project.name}
+                    </Typography>
             </Grid>
             <Grid item sx={{
                 backgroundColor: {xs: "none", md: "#e1d3cd"},

@@ -1,5 +1,7 @@
 import junkieBack from "../../../images/asha.jpg"
 import dicuci from "../../../images/dicuci.png"
+import kantin from "../../../images/Kantin.png"
+import pelanggan from "../../../images/Pelanggan.png"
 
 export type Experience= {
     id: number;
@@ -15,7 +17,8 @@ export type Experiences = {
     name: string;
     projects: Experience[]
 }
-export const experienceList:[Experiences] = [
+
+export const experienceList:Experiences[] = [
     {
         id : 0,
         name: "@PT Hirata Insan Mandiri",
@@ -33,6 +36,28 @@ export const experienceList:[Experiences] = [
                 detail: "A system information website for  fisher and integration with Backend Api for Database access and Super-User control.",
                 tech: ["React", "TypeScript"],
                 image: junkieBack
+            }
+        ]
+    },
+    {
+        id : 1,
+        name: "@My Project",
+        projects: [
+            {
+                id: 0,
+                name: "Mobile Apps DiPujas Kantin",
+                detail: "Developed DiPujas Kantin using Flutter, ExpressJS, and Firebase, addressing long queues, update real-time menus, and inefficient service in universities.",
+                tech: ["NodeJS", "ExpressJS", "Firebase", "Flutter"],
+                link: "https://play.google.com/store/apps/details?id=com.dipujas.kantin&pli=1",
+                image: kantin,
+            },
+            {
+                id: 1,
+                name: "Mobile Apps DiPujas Konsumen",
+                detail: "Developed DiPujas Konsumen with Flutter, ExpressJS, and Firebase for online ordering in universities, reducing queues, automating service, and increasing speed. Enables quick online food ordering, fast payments, and shorter lines.",
+                tech: ["NodeJS", "ExpressJS", "Firebase", "Flutter"],
+                link: "https://play.google.com/store/apps/details?id=com.dipujas.konsumen",
+                image: pelanggan
             }
         ]
     }
